@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+    <style>
+       body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 20px;
+      }
+      h1, h2 {
+          color: #8CE13F;
+          text-align: center;
+      }
+      .container {
+          max-width: 1200px;
+          margin: auto;
+          padding: 20px;
+          font-size: 25px;
+          text-align: justify;
+      }
+      ul {
+          list-style-type: disc;
+          margin-left: 20px;
+      }
+      .image{
+          margin-left: 20%;
+          margin-right: 30%; 
+          object-fit: cover;
+          max-width: 700px;
+          max-height:700px;
+      }
+      .image2{
+          margin-left: 29%;
+          margin-right: 30%; 
+          object-fit: cover;
+          max-width: 700px;
+          max-height:700px;
+      }
+    </style>
+    
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+          
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>Valorant</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+                    <img src="images/Valorant_banner.jpg" alt="Banner">
+                    <div class="container">
+                    <h1>Valorant - ogólne informacje</h1>
+    <p>Valorant to taktyczna strzelanka pierwszoosobowa stworzona przez Riot Games, wydana w czerwcu 2020 roku. Gra łączy elementy klasycznych strzelanek takich jak Counter-Strike z unikalnymi zdolnościami postaci, które przypominają styl rozgrywki z gier typu hero shooter.</p>
+                    <img src="images/valorantpick.PNG" alt="valorant pick" class="image">
+    <h2>Rozgrywka:</h2>
+    <ul>
+        <li><strong>Cel gry:</strong> Drużyny (atakująca i obronna) rywalizują ze sobą w rundach. Atakująca drużyna musi podłożyć bombę (spike), a obronna drużyna stara się ją zatrzymać.</li>
+        <li><strong>Postacie:</strong> W grze jest kilkanaście postaci którzy nazwani są agentami, z których każda ma unikalne zdolności. Agenci dzielą się na kilka klas, takich jak inicjatorzy, szturmowcy, strażnicy i kontrolerzy.</li>
+        <li><strong>Zdolności:</strong> Każdy agent posiada cztery zdolności: trzy unikalne i jedną ultimate, którą można użyć po zebraniu odpowiedniej ilości punktów. Zdolności mogą obejmować rzuty, obszary zadające obrażenia, wsparcie i zasłony dymne.</li>
+        <li><strong>Strategie:</strong> Gra wymaga współpracy zespołu, strategicznego rozlokowania i wykorzystania zdolności, oraz umiejętności celowania i precyzyjnego strzelania.</li>
+    </ul>
+    
+    <h2>Elementy taktyczne:</h2>
+                    <img src="images/valoskills.PNG" alt="valorant skills" class="image2">
+    <ul>
+        <li><strong>Ekonomiczne zarządzanie:</strong> Gracze zarabiają pieniądze za wykonywanie zadań, eliminowanie przeciwników i wygrywanie rund. Zarobione pieniądze mogą być przeznaczone na broń, pancerz i dodatkowe zdolności.</li>
+        <li><strong>Mapy:</strong> Gra oferuje różnorodne mapy, każda z unikalnym układem terenu, miejscami do podłożenia bomby i punktami strategicznymi.</li>
+        <li><strong>Umiejętności:</strong> Każda postać posiada unikalne umiejętności które mogą wykorzystać, żeby uzyskać przewagę nad wrogiem.</li>
+    </ul>
+    
+    <p>Valorant to gra, która nagradza taktyczne podejście, współpracę zespołową i umiejętności strzeleckie. Pozwala na dynamiczną i ekscytującą rozgrywkę, której centralnym punktem jest rywalizacja między drużynami.</p>
+            
+            </div>
+        </div>
+        </div>>
+    </main>
+    <footer>
+        <p>2024 STRONA PROJEKT</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 20px;
+      }
+      h1, h2 {
+          color: #8CE13F;
+          text-align: center;
+      }
+      .container {
+          max-width: 1200px;
+          margin: auto;
+          padding: 20px;
+          font-size: 25px;
+          text-align: justify;
+      }
+      ul {
+          list-style-type: disc;
+          margin-left: 20px;
+      }
+
+      .image{
+          margin-left: 33%;
+          margin-right: 30%; 
+          object-fit: cover;
+          max-width: 400px;
+          max-height: 400px;
+      }
+      .lanes li {
+            text-align: justify;
+            list-style: none;
+            padding-left: 80px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            border-radius: 1000px;
+        }
+        .lanes .offlane {
+          background-image: url('images/offlane.png');
+          height: 80%;
+          text-align: justify;
+        }
+
+        .lanes .midlane {
+          background-image: url('images/midlane.png');
+          height: 80%;
+        }
+
+        .lanes .carry {
+          background-image: url('images/carry.png');
+          height: 80%;
+
+        }
+        .lanes .support {
+          background-image: url('images/support2.png');
+          height: 80%;
+        }
+
+        .lanes .hardsupport {
+          background-image: url('images/support.png');
+          height: 80%;
+        }
+  </style>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+          
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>Dota 2</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+              <div class="container">
+                    <!--<img src="images/dota_banner.JPG" alt="Banner" class="image">-->
+                    
+                    
+                      <h1>Informacje o grze Dota 2</h1>
+              
+                      <h2>Przebieg rozgrywki</h2>
+                      <img src="images/dota2map.webp" alt="Mapa" class="image">
+                      <p><strong>Dota 2</strong> to gra, w której dwie pięcioosobowe drużyny rywalizują ze sobą na mapie złożonej z dwóch frakcji <span style="color:green;">Radiant</span> oraz <span style="color:red;">Dire</span>.
+                        Na mapie możemy rozróżnić 3 linie: Bezpieczna ścieżka (safelane), Środkowa ścieżka (midlane), Trudna ścieżka (offlane/hardlane). 
+                        Ścieżki te mają znaczenie strategiczne, ponieważ róźnią się one układem co sprawia ułatwienie bądź utrudnienie dla graczy się tam znajdujących.
+                        Należy też dodać, że mapa ta nie jest symetrzyczna to znaczy, że gracze na bezpiecznej ścieżce będą grali na przeciwnych graczy na trudnej ścieżce.
+                        Pomiędzy liniami mamy dżungle która zajmuje większość mapy. W niej możemy znaleźć neutralne stwory za których zabijanie otrzymujemy złoto, doświadczenie i zależnie od czasu na zegarze w grze neutralne przedmioty.
+                        Przez środek mapy przechodzi rzeka na której pojawiają się runy mocy, które są kluczowe podczas rozgrywki na środkowej ścieżce.
+                        W rogach mapy znajdziemy legowisko Roshana. Jest to silny neutralny potwór który po pokonaniu daje nam przedmiot który jednorazowo pozwala nam się odrodzić po 5 sekundach.
+                        Każda drużyna ma swoją bazę po przeciwnych stronach mapy. Celem gry jest zniszczenie głównej struktury w bazie przeciwnika, zwanej "Ancientem".</p>
+                      
+                      <h3>Fazy gry:</h3>
+                      <img class="zdj" src="images/dotapick.PNG" alt="Pick phase" class="image">
+                      <ul>
+                          <li><strong>Faza banowania (Ban Phase)</strong>:
+                            Każdy z graczy przed grą może wybrać do 4 bohaterów których chce wykluczyć z rozgrywki tzn. "zbanować".
+                            W każdej grze zostaje zbanowanych 16 bohaterów, 1 losowo wybrany bohater z czterech których wybraliśmy przed meczem dla każdego gracza co daje nam 10 banów. 
+                            Następnie zostaje zbanowanych 6 losowo wybranych bohaterów przez gre którzy są najczęściej banowani na naszym poziomie, co daje nam 16 banów co gre.</li>
+                            <li><strong>Faza wybierania (Pick Phase)</strong>:
+                              Następnie przechodzimy do fazy wybierania, która zajmuje 3 rundy. W pierwszych dwóch rundach trwających 25 sekund po dwóch graczy z drużyny wybiera swoich bohaterów.
+                             Trzecia faza trwa już tylko 20 sekund i pozostali gracze wybierają swoich bohaterów.</li>
+                          <li><strong>Faza początkowa (Early Game)</strong>: 
+                            Gracze skupiają się na zdobywaniu doświadczenia i złota poprzez zabijanie wrogich jednostek (creepów) i przeciwników.</li>
+                          <li><strong>Faza środkowa (Mid Game)</strong>: 
+                            Drużyny zaczynają bardziej koordynować swoje działania, organizując grupowe walki (teamfighty) i starając się zdobywać przewagę strategiczną na mapie.</li>
+                          <li><strong>Faza końcowa (Late Game)</strong>:
+                            Rozgrywka skupia się na dużych starciach drużynowych, zdobywaniu kluczowych celów i ostatecznie próbie zniszczenia Ancienta przeciwnika.</li>
+                      </ul>
+              
+                      <h2>Bohaterowie</h2>
+                      <p>W Docie mamy 124 bohaterów, a każdy z nich pełni różne role, które definiują ich zadania i sposób gry.
+                        Bohaterów możemy odróżnić za pomocą ich głównych atrubutów którymi mogą być: <span style="color:rgb(61, 152, 226);">inteligencja</span>, <span style="color:green;">zręczność,</span> <span style="color:red;">siła</span> i <span style="color:purple;">bohater uniwersalny</span>.
+                        Bohaterowie podczas rozgrywki podzieleni są na role i pozycje.
+                      </p>
+              
+                      <h3>Role bohaterów:</h3>
+                      <ul>
+                        <ul class="lanes">
+                          <li class="carry"><strong>Carry (Pozycja 1</strong>: Bohaterowie którzy grają na safelane'ie i z czasem stają się coraz silniejsi i są zdolni do zadawania ogromnych obrażeń w późniejszych fazach gry.  Przykłady: Anti-Mage, Sven.</li>
+                          <li class="midlane"><strong>Midlaner (Pozycja 2)</strong>: Bohaterowie, którzy grają na środkowej alei i często są odpowiedzialni za dominację w tej części mapy oraz inicjowanie działań w innych częściach mapy. Przykłady: Shadow Fiend, Storm Spirit.</li>
+                          <li class="offlane"><strong>Offlaner(Pozycja 3)</strong>: Bohaterowie którzy grają na offlane'ie, starając się przetrwać presję przeciwników i zdobywać cenne doświadczenie. Przykłady: Tidehunter, Beastmaster.</li>
+                          <li class="support"><strong>Roamer/Soft support (Pozycja 4)</strong>:  Bohaterowie, którzy często zmieniają pozycje na mapie, pomagając innym liniom i wywierając presję na przeciwnikach. Przykłady: Earth Spirit, Bounty Hunter.</li>
+                          <li class="hardsupport"><strong>Hard Support (Pozycja 5)</strong>: Bohaterowie wspierający, którzy pomagają drużynie poprzez leczenie, kontrolę tłumu i inne zdolności wspomagające. Przykłady: Crystal Maiden, Witch Doctor. </li>
+                      </ul>
+                          
+                         
+                          
+                      </ul>
+              
+                      <h2>Strategie gry</h2>
+                      <h3>Kluczowe aspekty strategiczne:</h3>
+                      <ul>
+                          <li><strong>Zarządzanie ekonomią</strong>: 
+                            Ważne jest, aby zdobywać złoto i doświadczenie efektywnie, eliminując creepów i biorąc udział w zabójstwach.</li>
+                          <li><strong>Kontrola mapy</strong>: 
+                            Wizja na mapie poprzez rozstawianie wardów oraz eliminowanie wardów przeciwnika jest kluczowa dla przewagi strategicznej.</li>
+                          <li><strong>Teamfight</strong>: 
+                            Koordynacja drużynowa i odpowiednie wykorzystanie zdolności bohaterów podczas grupowych starć.</li>
+                          <li><strong>Objective Control</strong>: 
+                            Zdobywanie ważnych celów na mapie, takich jak Roshan (potężny neutralny przeciwnik, którego pokonanie daje drużynie Aegis of the Immortal) oraz wieże obronne.</li>
+                          <li><strong>Push</strong>: 
+                            Skupienie się na niszczeniu struktur przeciwnika, aby zbliżyć się do Ancienta i go zniszczyć.</li>
+                      </ul>
+                      <p><strong>Nie czekaj dłużej! Pobierz Dota 2 za darmo i doświadcz jednej z najbardziej ekscytujących i satysfakcjonujących gier wszech czasów. Twoje miejsce w historii Dota 2 czeka!</strong>
+                      </p><br>
+                      <a href="https://store.steampowered.com/app/570/Dota_2/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" alt="Dota 2 Steam" class="image" style="width: 100px; height: 100px; margin-left: 50%;">
+                        <p style="margin-left: 33%;"><strong>Kliknij aby przenieść się na stronę sklepu!</strong></p>
+                      </a>
+                  </div>
+                    <p class="read-more"></p>
+            </div>
+            
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 STRONA PROJEKT</p>
+    </footer>
+</body>
+</html>

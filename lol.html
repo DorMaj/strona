@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 20px;
+
+      }
+      h1, h2 {
+          color: #8CE13F;
+          text-align: center;
+      }
+      .container {
+          max-width: 1200px;
+          margin: auto;
+          padding: 20px;
+          font-size: 22px;
+          text-align: justify;
+      }
+
+      .lanes li {
+            text-align: justify;
+            list-style: none;
+            padding-left: 40px;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        .lanes .top {
+          color: rgb(238, 183, 80);
+          background-image: url('images/top.jpg');
+          height: 80%;
+        }
+        .lanes .mid {
+          color: rgb(56, 56, 219);
+          background-image: url('images/mid.jpg');
+          height: 80%;
+        }
+        .lanes .bot {
+          color: rgb(247, 106, 106);
+          background-image: url('images/adc.jpg');
+          height: 80%;
+
+        }
+        .lanes .jg {
+          color: #67f567;
+          background-image: url('images/jg.jpg');
+          height: 80%;
+
+        }
+        .roles{
+          text-align: justify;
+        }
+        .roles .as{
+          color: rgb(131, 16, 16);
+        }
+        .roles .fh{
+          color: rgb(209, 119, 34);
+        }
+        .roles .mg{
+          color: rgb(36, 137, 196);
+        }
+        .roles .ms{
+          color: #8cca52;
+        }
+        .roles .supp{
+          color: rgb(231, 162, 183);
+        }
+        .image{
+          margin-left: 30%;
+          margin-right: 30%; 
+          object-fit: cover;
+          height: 40%; 
+          width: 40%;
+          max-width: 1000px;
+          max-height: 1000px;
+          
+        }
+        
+
+  </style>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div class="space"></div>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>LEAGUE OF LEGENDS</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+              <div class="container">
+                    <img class="image" src="images/LoL_banner.jpg" alt="Banner">
+                    <h1>Czym jest LoL ?</h1>
+    <p>League of Legends (LoL) to wieloosobowa gra komputerowa typu MOBA (Multiplayer Online Battle Arena), stworzona i wydana przez Riot Games w 2009 roku. Od tego czasu zdobyła ogromną popularność na całym świecie, stając się jedną z najbardziej rozpoznawalnych i dochodowych gier e-sportowych.</p>
+    <h2>Podstawy gry</h2>
+    <p>Gra rozgrywa się na mapie zwanej Summoner's Rift, gdzie dwie drużyny, składające się z pięciu graczy każda, rywalizują ze sobą w celu zniszczenia bazy przeciwnika – Nexusa. Nexus to serce bazy, chronione przez wieże oraz potężne jednostki obronne.</p>
+    <figure>
+        <img class="image" src="images/map.PNG">
+        <figcaption>Mapa Summoner's Rift</figcaption>
+    </figure>
+    <p>Każdy gracz kontroluje jednego bohatera zwanego championem, z unikalnymi umiejętnościami i rolami na polu bitwy. Istnieje wiele klas championów, takich jak:</p>
+    <ul class="roles">
+        <li class="as"><strong>Zabójcy (Assassins)</strong>: Specjalizują się w szybkim eliminowaniu przeciwników.</li>
+        <li class="fh"><strong>Wojownicy (Fighters)</strong>: Charakteryzują się dużą wytrzymałością i zadają spore obrażenia.</li>
+        <li class="mg"><strong>Magowie (Mages)</strong>: Używają magii, aby zadawać obrażenia z daleka.</li>
+        <li class="ms"><strong>Strzelcy (Marksmen)</strong>: Zadają obrażenia na odległość, korzystając z broni dystansowych.</li>
+        <li class="supp"><strong>Wsparcie (Supports)</strong>: Pomagają drużynie poprzez leczenie, kontrolę tłumu i inne umiejętności wspierające.</li>
+    </ul>
+    <h2>Rozgrywka</h2>
+    <p>Gra rozpoczyna się fazą wyboru championów, gdzie każda drużyna wybiera postacie w systemie draftu, starając się skomponować najlepszą możliwą drużynę. Następnie gracze rozpoczynają grę na trzech liniach (top, mid, bot) oraz w lesie (jungle).</p>
+    <img class="image" src="images/champselect.JPG" alt="champselect" style="height: 40%; width: 40%;">
+    <p>Każda linia ma swoje specyficzne role:</p>
+    <ul class="lanes">
+        <li class="top"><strong>Top Lane</strong>: Zwykle zajmowana przez tanków lub wojowników.</li>
+        <li class="mid"><strong>Mid Lane</strong>: Często wybierana przez magów lub zabójców.</li>
+        <li class="bot"><strong>Bot Lane</strong>: Składa się z duo – strzelca oraz wsparcia.</li>
+        <li class="jg"><strong>Jungle</strong>: Gracz wędruje po lesie, eliminując neutralne potwory i wspomagając linie poprzez nagłe ataki (ganki).</li>
+    </ul>
+    <p>Celem gry jest zdobywanie złota i doświadczenia poprzez zabijanie minionów, potworów i przeciwników, a także niszczenie wież. Wieże są obronnymi strukturami, które chronią bazę drużyny i linie przed przeciwnikami. Zwycięstwo odnosi drużyna, która jako pierwsza zniszczy Nexus przeciwnika.</p>
+    <h2>Strategia i taktyka</h2>
+    <p>League of Legends to gra, w której taktyka i strategia odgrywają kluczową rolę. Drużyny muszą współpracować, aby kontrolować mapę, zdobywać ważne cele, takie jak smoki i Barona Nashora, oraz efektywnie zarządzać zasobami.</p>
+    <figure>
+        <img class="image" src="images/baron.PNG" alt="Baron Nashor" style="height: 40%; width: 40%;">
+        <figcaption>Baron Nashor - jeden z najważniejszych celów na mapie</figcaption>
+    </figure>
+    <p>Smoki dają drużynie różnorodne wzmocnienia, podczas gdy Baron Nashor zapewnia potężne wzmocnienia, które mogą przesądzić o zwycięstwie. Kontrola wizji, czyli strategiczne rozmieszczanie wardów (oczka) na mapie, pozwala drużynie śledzić ruchy przeciwników i unikać pułapek.</p>
+    <h2>Społeczność i e-sport</h2>
+    <p>League of Legends ma ogromną, globalną społeczność graczy. Wiele osób gra w LoL dla zabawy, podczas gdy inni rywalizują na najwyższym poziomie w profesjonalnych ligach e-sportowych. Mistrzostwa Świata w League of Legends (Worlds) to coroczne wydarzenie, które przyciąga miliony widzów i oferuje ogromne nagrody pieniężne dla najlepszych drużyn.</p>
+    <p>League of Legends to nie tylko gra, ale i fenomen kulturowy, który zjednoczył miliony graczy na całym świecie, dostarczając im niezliczonych godzin rozrywki oraz emocji związanych z rywalizacją na najwyższym poziomie.</p>
+    <p>Gra League of Legends jest dynamiczna, wymagająca i satysfakcjonująca, oferując graczom nieskończone możliwości rozwoju umiejętności i taktyki. Bez względu na to, czy jesteś nowicjuszem, czy doświadczonym weteranem, zawsze znajdziesz w niej coś, co cię przyciągnie i zatrzyma na dłużej.</p>
+              </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+  <p>2024 STRONA PROJEKT</p>
+</footer>
+</html>

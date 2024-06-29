@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+    <style>
+      body {
+          background-color: #1a1a1a;
+          color: white;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .container{
+          font-size: 22px;
+      }   
+      .content {
+          margin: 20px;
+          padding: 20px;
+          background-color: #333333;
+          border-radius: 10px;
+      }
+      .section-title {
+          font-size: 40px;
+          color: #ffc851;
+          font-weight: bold;
+      }
+      .tournament {
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      .tournament img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+      }
+      .section {
+          margin-bottom: 40px;
+      }
+      .event-list {
+          list-style-type: none;
+          padding: 0;
+      }
+      .event-list li {
+          background-color: #444444;
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 5px;
+      }
+      h3 {
+        font-size: 35px;
+      }
+      h4{
+        color: rgb(0, 255, 8);
+      }
+      
+  </style>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+          
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>Conter Strike 2</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+                <div class="container">
+                    <img src="images/CS2_banner.png" alt="Banner">
+                    <h2>Aktualności w Conter Strike 2</h2>
+                    <div class="section">
+                      <div class="section-title">Patch 06/26/2024</div>
+                      <div class="tournament">
+                          <h4><strong>Pool day:</strong></h4>
+                          <li>Zaktualizowano do najnowszej wersji z Community Workshop (notatki aktualizacyjne).</li> <br>
+                          <h4><strong>Rózności:</strong></h4>
+                          <li>Udoskonalone mechaniki gry oraz realistyczna fizyka sprawiają, że każda potyczka jest jeszcze bardziej emocjonująca i nieprzewidywalna.</li><br>
+                          <li>Dodano wsparcie dla ładowania najnowszych wersji map społecznościowych z Workshopu podczas grania na serwerach społecznościowych, nawet jeśli różne wersje tych samych map są dostępne jako część oficjalnych grup map</li><br>
+                          <li>Naprawiono wykrywanie G-Sync w trybie pełnoekranowym bez ramki</li>
+                          <li>Naprawiono przypadek, gdzie układ klawiatury US English mógł pozostawać załadowany dla użytkowników z klawiaturami innymi niż angielskie</li><br>
+                          <li>Naprawiono pusty ciąg poleceń radiowych, który odtwarza się, gdy podłożona bomba C4 jest kilka sekund przed detonacją</li><br>
+                      </div>
+                      <div class="section-title">Patch 06/25/2024</div>
+                      <div class="tournament">
+                          <h4><strong>Mapy społecznościowe:</strong></h4>
+                              <li>Dodano mapy społecznościowe Thera i Mills do grup map Competitive, Casual i Deathmatch.</li><br>
+                              <li>Dodano mapy społecznościowe Memento i Assembly do puli map Wingman.</li><br>
+                              <li>Dodano mapę społecznościową Pool Day do puli map Arms Race.</li><br>
+                          <h4><strong>Nuke:</strong></h4>
+                              <li>Naprawiono miejsca, gdzie mogła się zatrzymać bomba C4.</li><br>
+                          <h4><strong>Ancient:</strong></h4>
+                              <li>Naprawiono miejsca, gdzie mogła się zatrzymać bomba C4, dziury w świecie oraz problemy z nie-solidnymi obiektami.</li><br>
+                          <h4><strong>Vertigo:</strong></h4>
+                              <li>Naprawiono miejsca, gdzie mogła się zatrzymać bomba C4 oraz clipping.</li><br>
+                          <h4><strong>Anubis:</strong></h4>
+                              <li>Naprawiono kolizje granatów oraz clipping.</li><br>
+                          <h4><strong>Interfejs użytkownika:</strong></h4>
+                              <li>Zaktualizowano panel MVP we wszystkich trybach gry.</li><br>
+                              <li>Dodano całkowicie nowe animowane panele MVP do meczów Premier.</li><br>
+                              <li>Dodano kilka nowych warunków MVP i dostosowano wcześniejsze zasady MVP.</li><br>
+                          <h4><strong>Rozgrywka:</strong></h4>
+                              <li>W meczach matchmakingowych, po uzyskaniu dwóch zwycięstw na mapie, wyświetlane są teraz grupy umiejętności specyficzne dla danej mapy.</li><br>
+                          <h4><strong>Ustawienia wideo:</strong></h4>
+                              <li>Dodano okienko z rekomendacjami ustawień, jeśli częstotliwość odświeżania wyświetlacza jest ustawiona poniżej maksymalnej wartości podczas uruchamiania.</li><br>
+                              <li>Dodano okienko z rekomendacjami ustawień, jeśli wykryto wsparcie NVIDIA G-Sync, ale nie jest ono włączone podczas uruchamiania.</li><br>
+                              <li>Dodano okienko z rekomendacjami ustawień, jeśli NVIDIA G-Sync jest włączone, ale nie są włączone V-Sync i/lub NVIDIA Reflex.</li><br>
+                              <li>Usunięto ustawienia "Main Menu Background Scenery" oraz "Item Inspect Background Scenery" z strony Ustawień Wideo.</li><br>
+                              <li>Ustawienie "Refresh Rate" teraz pokazuje bieżącą częstotliwość odświeżania wyświetlacza w trybach Okna i Okna Pełnoekranowego.</li><br>
+                              <li>Usunięto ustawienie "Laptop Power Savings", które nigdy nie było konfigurowalne w CS2.</li><br>
+                              <li>Dodano sekcję "Frame Pacing" na zaawansowanej stronie ustawień wideo.</li><br>
+                              <li>Dodano suwaki "Maximum FPS In Game" i "Maximum FPS In Menus" do sekcji Frame Pacing.</li><br>
+                              <li>Domyślne ustawienie "Maximum FPS In Menus" zostało zwiększone z 120 FPS do 200 FPS.</li><br>
+                              <li>Podgląd wizualny zaawansowanych ustawień wideo teraz używa maksymalnego FPS "In Game", a nie maksymalnego FPS "In Menus".</li><br>
+                      </div>
+                    </div>
+                    <div class="section-title">Patch 06/20/2024</div>
+                    <div class="tournament">
+                          <h4><strong>Poprawki:</strong></h4>
+                              <li>Naprawiono przypadek, w którym gra błędnie identyfikowała przycisk jako nadal wciśnięty po tym, gdy został już zwolniony.</li><br>
+                          <h4><strong>Ulepszenia sieciowe:</strong></h4>
+                              <li>Wprowadzono więcej ulepszeń sieciowych pod kątem uwzględniania utraty pakietów i niestabilności.</li><br>
+                    </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 STRONA PROJEKT</p>
+    </footer>
+</body>
+</html>

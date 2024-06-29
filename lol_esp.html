@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+    <style>
+      .info img{
+        max-width: 900px;
+        max-height: 750px;
+      }
+
+      h1{
+        color: #8CE13F;
+      }
+
+      h2{
+        color: #8CE13F;
+      }
+
+      h3{
+        color: #8CE13F;
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 22px;    
+        }
+      a{
+        color: rgb(147, 243, 243);
+      }
+    </style>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>LEAGUE OF LEGENDS</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+                <div class="container">
+                    <img src="images/LoL_banner.jpg" alt="Banner">
+                    <h1>Aktualne turnieje</h1>
+                    <h2>LCS,LCK,LJL,LPL,PCS,VCS (turnieje regionie)</h2>
+                    <p>Odwiedz oficialną strone na której możesz oglądać aktualne mecze na żywo:</p>
+                    <a href="https://lolesports.com/" style="color: rgb(140, 226, 226); font-size: 35px;">Lolesports.com</a>
+                    <h1>Najpopularniejsze Drużyny Esportowe i Ich Gracze w Grze League of Legends</h1>
+                      <div class="section">
+                          <p>League of Legends, jeden z najpopularniejszych tytułów esportowych na świecie, posiada liczne drużyny, które zdobyły serca fanów na całym globie. Oto przegląd najpopularniejszych drużyn esportowych w tej grze oraz ich kluczowych graczy, którzy zdominowali scenę w 2024 roku.</p>
+                          
+                          <h2>1. T1 (Korea)</h2>
+                          <img src="images/t1.PNG" alt="">
+                          <p>T1 to jedna z najbardziej znanych i utytułowanych drużyn w historii League of Legends. Znana wcześniej jako SK Telecom T1, ta koreańska drużyna zdobyła kilka tytułów mistrza świata.</p>
+                          <ul>
+                              <li><strong>Faker (Lee Sang-hyeok)</strong> - Jeden z najbardziej legendarnych graczy w historii League of Legends, trzykrotny mistrz świata.</li>
+                              <li><strong>Gumayusi (Lee Min-hyeong)</strong> - Utalentowany AD Carry, który szybko zyskał uznanie za swoje umiejętności i skuteczność w grze.</li>
+                              <li><strong>Keria (Ryu Min-seok)</strong> - Wspierający gracz, znany z doskonałych umiejętności kontrolowania mapy i wspierania drużyny.</li>
+                          </ul>
+                          
+                          <h2>2. G2 Esports (Europa)</h2>
+                          <img src="images/g2.PNG" alt="">
+                          <p>G2 Esports to jedna z najbardziej rozpoznawalnych drużyn w Europie, słynąca ze swojej kreatywności i niesamowitych powrotów w meczach.</p>
+                          <ul>
+                              <li><strong>Caps (Rasmus Winther)</strong> - Środkowy gracz, znany z niesamowitej wszechstronności i zdolności do gry na najwyższym poziomie pod presją.</li>
+                              <li><strong>Yike (Martin Sundelin)</strong> - Dżungler, uznawany za jednego z najlepszych graczy na swojej pozycji w historii europejskiego League of Legends.</li>
+                              <li><strong>Hans Sama (Steven Liv)</strong> - AD Carry, który dołączył do G2 w 2024 roku i szybko stał się kluczowym elementem zespołu.</li>
+                          </ul>
+                          
+                          <h2>3. DAMWON Gaming (Korea)</h2>
+                          <img src="images/dplus.PNG" alt="">
+                          <p>DAMWON Gaming, znany również jako DWG KIA, zdobył Mistrzostwo Świata w 2020 roku i od tego czasu pozostaje jednym z najsilniejszych zespołów w Korei.</p>
+                          <ul>
+                              <li><strong>ShowMaker (Heo Su)</strong> - Środkowy gracz, uznawany za jednego z najlepszych na świecie dzięki swoim niesamowitym umiejętnościom i zdolności do prowadzenia drużyny.</li>
+                              <li><strong>Canyon (Kim Geon-bu)</strong> - Jeden z najlepszych dżunglerów na świecie, znany z doskonałego zrozumienia gry i umiejętności podejmowania decyzji.</li>
+                              <li><strong>deokdam (Seo Dae-gil)</strong> - AD Carry, który dołączył do DAMWON Gaming, wnosi ze sobą świetne umiejętności mechaniczne i zrozumienie gry.</li>
+                          </ul>
+                          
+                          <h2>4. Royal Never Give Up (Chiny)</h2>
+                          <img src="images/rng.PNG" alt="">
+                          <p>Royal Never Give Up, znane jako RNG, to jedna z najbardziej utytułowanych drużyn w Chinach, znana z agresywnego stylu gry i wybitnych graczy.</p>
+                          <ul>
+                              <li><strong>Xiaohu (Li Yuan-Hao)</strong> - Wszechstronny gracz, który może grać na kilku pozycjach, znany ze swojej elastyczności i doświadczenia.</li>
+                              <li><strong>Wei (Yan Yang-Wei)</strong> - Dżungler, który wnosi do drużyny agresywną grę i świetne zrozumienie mechanik gry.</li>
+                              <li><strong>GALA (Chen Wei)</strong> - AD Carry, który zasłynął ze swoich mechanicznych umiejętności i zdolności do wygrywania kluczowych walk drużynowych.</li>
+                          </ul>
+                          
+                          <h2>5. Cloud9 (Ameryka Północna)</h2>
+                          <img src="images/c9.PNG" alt="">
+                          <p>Cloud9 to jedna z najbardziej rozpoznawalnych drużyn w Ameryce Północnej, znana z konsekwentnych występów na międzynarodowej scenie.</p>
+                          <ul>
+                              <li><strong>Fudge (Ibrahim Allami)</strong> - Górny, znany z solidnej gry i zdolności do wygrywania linii.</li>
+                              <li><strong>Berserker (Kim Min-cheol)</strong> - AD Carry, który szybko stał się jednym z najlepszych strzelców w regionie.</li>
+                              <li><strong>Zven (Jesper Svenningsen)</strong> - Wspierający, wcześniej AD Carry, który przeszedł na nową pozycję, pokazując niesamowitą wszechstronność.</li>
+                          </ul>
+                      </div>
+                    </div>      
+            </div>
+            
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 STRONA PROJEKT</p>
+    </footer>
+</body>
+</html>

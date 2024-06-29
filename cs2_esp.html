@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+    <style>
+      body {
+          background-color: #1a1a1a;
+          color: white;
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .container{
+        font-size: 22px;
+      }
+      .content {
+          margin: 20px;
+          padding: 20px;
+          background-color: #333333;
+          border-radius: 10px;
+      }
+      .section-title {
+          font-size: 40px;
+          color: #4dff00;
+          font-weight: bold;
+      }
+      .tournament {
+          margin-top: 20px;
+          margin-bottom: 20px;
+      }
+      .tournament img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+      }
+      .section {
+          margin-bottom: 40px;
+      }
+      .event-list {
+          list-style-type: none;
+          padding: 0;
+      }
+      .event-list li {
+          background-color: #444444;
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 5px;
+      }
+      h3 {
+        font-size: 35px;
+      }
+  </style>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+          
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>Esport w Conter Strike 2</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+              <div class="container">
+                <img src="images/CS2_banner.png" alt="Banner">
+                  <div class="section">
+                      <div class="section-title">Główne Turnieje i Wydarzenia</div>
+                      <div class="tournament">
+                          <h3>Turnieje PGL</h3>
+                          <img src="https://liquipedia.net/commons/images/thumb/6/6e/PGL_Major_Copenhagen_2024_allmode.png/600px-PGL_Major_Copenhagen_2024_allmode.png" alt="Turniej PGL" style="width: 20%;">
+                          <p>PGL ogłosiło serię turniejów wysokiej stawki na lata 2025 i 2026, z wieloma wydarzeniami zaplanowanymi na cały rok. Obejmują one pięć turniejów w 2025 roku i kolejne sześć w 2026 roku, każdy z nich zaprojektowany, aby zgromadzić najlepsze drużyny z całego świata. Wprowadzenie nowych zasad licencjonowania przez Valve, które zapobiegają konfliktom interesów między organizatorami wydarzeń a drużynami, pozwoliło PGL na znaczne rozszerzenie swojej oferty.</p>
+                      </div>
+                      <div class="tournament">
+                          <h3>Mapa Drogowa Skyesports</h3>
+                          <img src="images/masteresports.png" alt="Mapa Drogowa Skyesports" style="width: 30%">
+                          <p>Skyesports, indyjski organizator esportowy, przedstawił ambitną mapę drogową na 2024 rok, obejmującą sześć głównych turniejów z łączną pulą nagród w wysokości 1 000 000 USD. Wydarzenia odbędą się zarówno w Indiach, jak i za granicą, z notable turniejami takimi jak Skyesports Grand Slam, Skyesports Masters i Skyesports Championship 6.0.</p>
+                      </div>
+                      <div class="tournament">
+                          <h3>Globalne Finały CCT</h3>
+                          <img src="https://egamersworld.com/_next/image?url=https%3A%2F%2Fegamersworld.com%2Fuploads%2Ftournaments%2Fcct-south-america-series-1688372561889-logo.png&w=384&q=75" alt="Globalne Finały CCT" style="width: 25%">
+                          <p>Finały Globalne CS2 Champions of Champions Tour (CCT) to kolejny ważny punkt w kalendarzu esportowym. Zaplanowane na maj 2024 roku, turniej ten będzie miał pulę nagród w wysokości 500 000 USD i zgromadzi 16 najlepszych drużyn w rygorystycznym formacie rywalizacji, kulminującym w wielkim finale w systemie best-of-five.</p>
+                      </div>
+                  </div>
+                  <div class="section">
+                      <div class="section-title">Drużyny i Zawody</div>
+                      <p>Scena rywalizacyjna CS2 obejmuje różnorodne drużyny z różnych regionów. Na przykład, w Globalnych Finałach CCT wezmą udział drużyny takie jak Astralis, Team Liquid, fnatic i OG, prezentując mieszankę uznanych potęg i wschodzących gwiazd.</p>
+                      <p>Wydarzenia Skyesports również zobaczą udział międzynarodowych drużyn, zapewniając globalną platformę do rywalizacji i rozwoju talentów. Notable wydarzenia, takie jak Skyesports Souvenir w Kolombo i Skyesports Global Tour w Bangkoku, dodatkowo zwiększą międzynarodową atrakcyjność esportu CS2.</p>
+                  </div>
+                  <div class="section">
+                      <div class="section-title">Innowacje i Wsparcie Społeczności</div>
+                      <p>Nowe zasady licencjonowania Valve otworzyły krajobraz rywalizacji CS2, umożliwiając szerszej gamie organizatorów turniejów organizowanie wydarzeń. Ten ruch ma na celu promowanie bardziej inkluzywnego i zróżnicowanego ekosystemu esportowego, przełamując wcześniejszy monopol kilku organizatorów.</p>
+                      <p>Skyesports inwestuje również w wydarzenia na poziomie podstawowym, wspierając rozgrywki uniwersyteckie i kawiarniane w Indiach, aby wspierać rozwijające się talenty i zapewnić zrównoważoność sceny esportowej.</p>
+                  </div>
+                  <div class="section">
+                      <div class="section-title">Gdzie Oglądać</div>
+                      <p>Fani mogą śledzić wszystkie wydarzenia z tych turniejów na różnych platformach streamingowych. Wydarzenia takie jak Globalne Finały CCT będą transmitowane na oficjalnych kanałach <a href="https://www.twitch.tv/" target="_blank" style="color: #8868e0">Twitch</a>, umożliwiając fanom z całego świata śledzenie i wspieranie swoich ulubionych drużyn.</p>
+                  </div>
+                  <div class="section">
+                      <div class="section-title">Podsumowanie</div>
+                      <p>Counter-Strike 2 szybko ustanawia się jako główny gracz w świecie esportu z napiętym harmonogramem turniejów o wysokim profilu i wspierającą infrastrukturą społecznościową. Niezależnie od tego, czy jesteś okazjonalnym widzem, czy oddanym fanem, w rywalizacyjnej scenie CS2 czeka na Ciebie wiele ekscytujących wydarzeń.</p>
+                  </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 STRONA PROJEKT</p>
+    </footer>
+</body>
+</html>

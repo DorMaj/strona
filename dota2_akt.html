@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+    <style>
+    body{
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 20px;   
+        }
+    h1  {
+          text-align: center;
+          color: #8CE13F;
+        }
+    h2  {
+          background-color: #444;
+          padding: 10px;
+          border-radius: 5px;
+        }
+    h3  {
+        color: #8CE13F;
+        }
+    h4  {
+        color: purple;
+        }
+    ul  {
+          list-style-type: none;
+          padding: 0;
+        }
+    .section {
+          padding: 20px;
+          margin: 20px 0;
+          border-radius: 5px; 
+        }
+    .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 22px;    
+        }
+    .section-title {
+            margin-top: 30px;
+            padding-bottom: 10px;
+
+        }
+    .item, .hero, .neutral-item {
+          margin-bottom: 20px;
+        }
+
+  </style>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+          
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">Esport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>Dota 2</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+              <div class="container">
+                <h1>Aktualizacja Rozgrywki 7.36c</h1>
+                <h2>Aktualizacje Przedmiotów</h2>
+                <div class="item">
+                    <h3>Arcane Blink</h3>
+                    <div>
+                        <p>Czas odnowienia zwiększony z 7s do 9s</p>
+                        <p>Liczba przywracanych punktów zdrowia zwiększona z 200 do 250</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Arcane Boots</h3>
+                    <div>
+                        <p>Zmniejszono regenerację many z 0,75 do 0,5 pkt.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Bloodthorn</h3>
+                    <div>
+                        <p>Umiejętność Soul Rend nie zadaje obrażeń, jeśli wyciszenie zostanie rozproszona</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Phylactery</h3>
+                    <div>
+                        <p>Koszt przepisu zwiększony z 200 do 400. Całkowity koszt zwiększony z 2400 do 2600</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Khanda</h3>
+                    <div>
+                        <p>Całkowity koszt zwiększony z 5000 do 5200 (ze względu na zwiększenie kosztu Phylactery)</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Meteor Hammer</h3>
+                    <div>
+                        <p>Premia do regeneracji many zmniejszona z +75% do +50%</p>
+                        <p>Koszt many Meteor Hammer zmniejszony z 100 do 75</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Radiance</h3>
+                    <div>
+                        <p>Promień wypalenia zmniejszony z 700 do 650</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Revenant's Brooch</h3>
+                    <div>
+                        <p>Redukcja kosztu many ma teraz wpływ na koszt many Phantom Province</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Silver Edge</h3>
+                    <div>
+                        <p>Czas trwania złamania Shadow Walk zwiększony z 5s do 6s</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Urn of Shadows</h3>
+                    <div>
+                        <p>Ładunki nie są już dodawane, gdy przedmiot jest zduplikowany (Meepo's Pack Rat, Arc Warden's Tempest Double)</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3>Spirit Vessel</h3>
+                    <div>
+                        <p>Ładunki nie są już dodawane, gdy przedmiot jest zduplikowany (Meepo's Pack Rat, Arc Warden's Tempest Double)</p>
+                    </div>
+                </div>
+                
+                <h2>Aktualizacje Neutralnych Przedmiotów</h2>
+                <div class="neutral-item">
+                    <h3>Psychic Headband</h3>
+                    <div>
+                        <p>Psychic Push jest teraz klasyfikowany jako efekt odepchnięcia</p>
+                    </div>
+                </div>
+                
+                <h2>Aktualizacje Bohaterów</h2>
+                <div class="hero">
+                    <h3>Abaddon</h3>
+                    <h4>Umiejętności</h4>
+                    <div>
+                        <h5>Borrowed Time</h5>
+                        <div>
+                            <p>Zasięg Aghanim's Scepter zmniejszony z 1200 do 900</p>
+                            <p>Próg obrażeń Aghanim's Scepter zwiększony z 525 do 550</p>
+                        </div>
+                    </div>
+                    <h4>Talenty</h4>
+                    <div class="talent">
+                        <p>Poziom 10: Spowolnienie ruchu Curse of Avernus zwiększone z +10% do +15%</p>
+                        <p>Poziom 20: Borrowed Time Immolation DPS zwiększone z 95 do 100</p>
+                    </div>
+                </div>
+                <div class="hero">
+                    <h3>Ancient Apparition</h3>
+                    <h4>Facets</h4>
+                    <div>
+                        <h5>Exposure</h5>
+                        <h5>Ice Blast</h5>
+                        <p>Cold Feet AoE zwiększone z 0/150/300/450 do 0/200/350/500</p>
+                    </div>
+                </div>
+                <div class="hero">
+                    <h3>Axe</h3>
+                    <h4>Facets</h4>
+                    <div>
+                        <h5>Jednoosobowa Armia</h5>
+                        <div>
+                            <p>Czas utrzymywania się efektu skrócony z 5 do 3 sekund.</p>
+                        </div>
+                    </div>
+                    <h4>Talenty</h4>
+                    <div class="talent">
+                        <p>Poziom 10: Culling Blade Speed Bonus Duration zmniejszone z +4s do +3s</p>
+                        <p>Poziom 20: Culling Blade Damage zmniejszone z +125 do +100</p>
+                    </div>
+                </div>
+                <div class="hero">
+                    <h3>Bounty Hunter</h3>
+                    <h4>Umiejętności</h4>
+                    <div>
+                        <h5>Track</h5>
+                        <div>
+                            <p>Czas trwania skrócony z 30 do 25 sekund.</p>
+                            <p>Wzmocnienie obrażeń zmniejszone z 8/14/20% do 6/12/18%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero">
+                    <h3>Brewmaster</h3>
+                    <h4>Facets</h4>
+                    <div>
+                        <h5>Toczenie Beczki</h5>
+                        <div>
+                            <p>Obrażenia przy trafieniu beczki zmniejszone z 50/75/100/125 do 40/60/80/100 jednostek.</p>
+                        </div>
+                    </div>
+                    <h4>Umiejętności</h4>
+                    <div>
+                        <h5>Primal Split</h5>
+                        <div>
+                            <p>Czas trwania premii po ulepszeniu przez Aghanim's Shard skrócony z 12 do 8 sekund.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero">
+                    <h3>Centaur Warrunner</h3>
+                    <div>
+                        <p>Zmniejszono bazową regenerację zdrowia z 4 do 3 pkt.</p>
+                    </div>
+                    <h4>Umiejętności</h4>
+                    <div>
+                        <h5>Rawhide</h5>
+                        <div>
+                            <p>Maksymalne uzyskiwane zdrowie zmniejszone z 35 do 30 pkt. zdrowia.</p>
+                        </div>
+                    </div>
+                </div>
+        <div class="hero">
+            <h3>Chaos Knight</h3>
+            <div>
+              <p>Zmniejszono przyrost Siły z 3,2 do 3,1 pkt</p>
+          </div>
+            <h4>Facets</h4>
+            <div>
+                <h5>Krwawa Zbroja</h5>
+                <div>
+                    <p>Obrażenia z krwawienia zmniejszone z 10% do 8% maksymalnego zdrowia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <h3>Clockwerk</h3>
+            <h4>Facets</h4>
+            <div>
+              <h5>Hookup</h5>
+              <h5>Hookshot</h5>
+              <div>
+                  <p>Od teraz nakłada barierę na samego Clockwerka, zamiast na jego sojuszników.</p>
+              </div>
+            <h4>Umiejętności</h4>
+            <div>
+                <h5>Power Cogs</h5>
+                <div>
+                    <p>Wydłużono czas oczekiwania z 15 do 21/19/17/15 sekund.</p>
+                    <p>Mana Burn decreased from 50/80/110/140 to 35/70/105/140</p>
+                <h4>Talenty</h4>
+                <p>Poziom 10: Zmniejszenie czasu odnowienia Power Cogs zmniejszone z 3s do 2s</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <h3>Dark Seer</h3>
+            <h4>Facets</h4>
+            <div>
+                <h5>Serce bitwy</h5>
+                <div>
+                    <p>Zmniejszono premię do szybkości od pobliskich sojuszników z 8% do 7%.</p>
+                </div>
+                <h4>Umiejętności</h4>
+                <h5>Wall of replica</h5>
+                <p>Zmniejszono obrażenia od replik z 70/85/100% do 70/80/90%.</p>
+                <h5>Normal punch</h5>
+                <p>Skrócono maksymalny czas trwania ogłuszenia z 1,5 do 1,25 sekundy.</p>
+            </div>
+        </div>
+        <div class="hero">
+            <h3>Dark Willow</h3>
+            <h4>Facets</h4>
+            <h5>Ciernisty gąszcz</h5>
+            <h5>Bramble maze</h5>
+            <p>Zmniejszono czas trwania dodatkowych cierni z 6 do 4 sekund.</p>
+            <div>
+              <h4>Umiejętności</h4>
+                <h5>Bramble maze</h5>
+                <p>Skrócono czas trwania z 15 do 12 sekund.</p>
+                <h5>Bedlam</h5>
+                <p>Nie da się już rzucić na sojuszników.</p>
+            </div>
+        </div>
+        <div class="hero">
+            <h3>Dragon Knight</h3>
+            <h4>Facets</h4>
+              <h5>Ognisty smok</h5>
+                <p>Zwiększono obrażenia od rozpłatania z 25/35/45/55% do 30/40/50/60%.</p>
+            </div>
+        </div>
+        <div class="hero">
+            <h3>Drow ranger</h3>
+            <h4>Umiejętności</h4>
+              <h5>Multishot</h5>
+                <p>Zwiększono szybkość pocisku z 1200 do 1300 jednostek.</p>
+              <h4>Talenty</h4>
+              <p>Poziom 10: Zmniejszenie czasu odnowienia Gust zwiększone z 3s do 3.5s</p>
+              <p>Poziom 20: Zwiększona prędkość poruszania się od Gust z 40% do 50%</p>
+            </div>
+        <div class="hero">
+            <h3>Ember Spirit</h3>
+            <h4>Umiejętności</h4>
+            <h5>Sleight of fist</h5>
+              <p>Obrażenia dodatkowe bohatera zmniejszone z 45/85/125/165 do 40/80/120/160</p>
+            </div>
+        <div class="hero">
+            <h3>Enigma</h3>
+            <p>Zmniejszono bazową szybkość ruchu z 290 do 280 jednostek.</p>
+            <h4>Umiejętności</h4>
+                <h5>Demonic summoning</h5>
+                  <p>Bonusowe zdrowie Eidolonów jako procent zdrowia Enigmy zmniejszone z 4% do 3%.</p>
+                  <p>Obrażenia Eidolonów zmniejszone z 16-24/24-32/34-42/43-51 do 14-20/24-30/34-40/44-50.</p>
+        </div>
+        <div class="hero">
+            <h3>Faceless Void</h3>
+            <h4>Facets</h4>
+            <h5>Strefa czasowa</h5>
+                <p>Zwiększono zasięg rzutu z 500 do 625 jednostek.</p>
+                <p>Zwiększono manipulację szybkości ataku z 50/100/150 do 70/110/150 jednostek.</p>
+                <p>Zwiększono promień z 800 do 900 jednostek.</p>
+        </div>
+        <div class="hero">
+            <h3>Hoodwink</h3>
+            <h4>Umiejętności</h4>
+                <h5>Acorn shot</h5>
+                <p>Zmniejszono premię do zasięgu ataku ze 125/200/275/350 do 75/150/225/300 jednostek.</p>
+        </div>
+        <div class="hero">
+            <h3>Invoker</h3>
+            <h4>Umiejętności</h4>
+            <h5>Mastermind</h5>
+            <p>Od teraz aktywuje się, jeśli jednostki pod kontrolą Invokera dokonają dobicia.</p>
+        </div>
+        <div class="hero">
+            <h3>Legion Commander</h3>
+            <h4>Facets</h4>
+            <h5>Spoils of war</h5>
+            <h5>Duel</h5>
+                <p>Zwiększono premię do obrażeń za asystę z 4/8/12 do 5/10/15 pkt.</p>
+        </div>
+        <div class="hero">
+            <h3>Leshrac</h3>
+            <h4>Umiejętności</h4>
+            <h5>Lightning storm</h5>
+                <p>Zmniejszono zasięg rzutu z 650 do 600 jednostek.</p>
+        </div>
+        <div class="hero">
+            <h3>Lich</h3>
+            <h4>Facets</h4>
+            <h5>Frostbound</h5>
+            <h5>Chain frost</h5>
+                    <p>Czas trwania Frostbound zmniejszony z 2,5/3,5/4,5 sekundy do 2/3/4 sekundy.</p>
+            <h5>Growing cold</h5>
+            <p>Zabite iluzje są teraz traktowane jako zabite stwory.</p>
+        </div>
+        <div class="hero">
+            <h3>Lifestealer</h3>
+            <h4>Facets</h4>
+            <h5>Corpse eater</h5>
+                    <p>Premia do maksymalnego zdrowia za każde zabicie zmniejszona z +2 do +1.</p>
+                    <p>Nie zwiększa już maksymalnego zdrowia przy zabijaniu innych typów jednostek (wardów, zębatek itp.).</p>
+                    <p>Otrzymuje teraz +5 do maksymalnego zdrowia za zabicie bohatera.</p>
+            <h4>Umiejętności</h4>
+            <h5>Open wounds</h5>
+                <p>Zmniejszono maksymalne spowolnienie z 50% do 35/40/45/50%.</p>
+        </div>
+        <div class="hero">
+            <h3>Lone Druid</h3>
+            <h4>Facets</h4>
+            <h5>Niedźwiedzia przysługa</h5>
+            <h5>True form</h5>
+                    <p>Zwiększono premię do szybkości ataku z 10% do 15%.</p>
+        </div>
+        <div class="hero">
+            <h3>Mars</h3>
+            <h4>Facets</h4>
+            <h5>Victory feast</h5>
+            <h5>Arena of blood</h5>
+                    <p>Zwiększono przywracane zdrowie z 20% do 30%.</p>
+        </div>
+        <div class="hero">
+            <h3>Medusa</h3>
+            <h4>Facets</h4>
+            <h5>Mana pact</h5>
+            <h5>Mana shield</h5>
+                <p>Zwiększono premię do szybkości ataku na sekundę z 3% do 3,5%.</p>
+                <p>Zwiększono maksymalną szybkość ataku z 30% do 35%.</p>
+        </div>
+        <div class="hero">
+            <h3>Naga Siren</h3>
+            <h4>Facets</h4>
+            <h5>Deluge</h5>
+                <p>Skrócono czas oczekiwania z 10 do 10/9/8/7 sekund.</p>
+        </div>
+        <div class="hero">
+            <h3>Nature Prophet</h3>
+            <h4>Facets</h4>
+            <h5>Soothing saplings</h5>
+            <h5>Sprout</h5>
+                <p>Przeskalowano leczenie na sekundę z umiejętności Sprout z 12/20/28/36 do 10/20/30/40.</p>
+            <h5>Ironwood treant</h5>
+                <p>Obrażenia Treantów zwiększone o 4 na każdym poziomie, z 22-30/38-46/54-62/70-78 do 28-32/44-48/60-64/76-80.</p>
+            <h4>Umiejętności</h4>
+            <h5>Nature's call</h5>
+            <p>Obrażenia Treantów zwiększone o 2 na każdym poziomie, z 11-15/19-23/27-31/35-39 do 13-17/21-25/29-33/37-41.</p>
+        </div>
+        <div class="hero">
+            <h3>Necrophos</h3>
+            <h4>Facets</h4>
+            <h5>Rapid decay</h5>
+            <h5>Ghost shroud</h5>
+                <p>Przyrost szybkości ruchu po spowolnieniu wroga zwiększono z 25% do 40%.</p>
+        </div>
+        <div class="hero">
+            <h3>Night Stalker</h3>
+            <h4>Umiejętności</h4>
+            <h5>Crippling fear</h5>
+                <p>Teraz kosztuje many na sekundę jedynie po przedłużeniu czasu trwania po zakończeniu normalnego z Aghanim's Scepter.</p>
+                <p>Koszt many przy użyciu Aghanim's Scepter wynosi teraz zawsze 6%.</p>
+            <h5>Hunter in the night</h5>
+                <p>Zmniejszono maksymalne przywracane zdrowie po ulepszeniu przez Aghanim's Shard z 30% do 25%.</p>
+            <h5>Dark ascension</h5>
+                <p>Już nie odświeża czasów oczekiwania podstawowych umiejętności.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 10: Dark Ascension czas trwania został zmniejszony z +8s do +6s.</p>
+            </div>
+        <div class="hero">
+            <h3>Omniknight</h3>
+            <h4>Facets</h4>
+            <h5>Wszechobecny</h5>
+            <h5>Degen aura</h5>
+                <p>Skrócono odstęp między zwiększaniem obrażeń z 0,4 do 0,3 s.</p>
+
+            </div>
+        <div class="hero">
+            <h3>Oracle</h3>
+            <h4>Facets</h4>
+            <h5>Jasnowidzące lekarstwo</h5>
+                <p>Zmniejszono wzmocnienie leczenia z 1% do 0,75%.</p>
+        </div>
+        <div class="hero">
+            <h3>Pangolier</h3>
+            <h4>Umiejętności</h4>
+            <h5>Roll up</h5>
+                <p>Skrócono czas trwania z 2,75 do 2,25 sekundy.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 10: Swashbuckle Slash zasięg został zmniejszony z +250 do +200.</p>
+                <p>Poziom 15: Shield Crash bariera za trafienie bohatera została zmniejszony z +100 do +80.</p>
+        </div>
+        <div class="hero">
+            <h3>Phantom assasin</h3>
+            <p>Zwiększono bazowe obrażenia o 2 pkt</p>
+            <h4>Umiejętności</h4>
+            <h5>Niematerialna</h5>
+                <p>Początkowe uniki zwiększone z 15% do 20%</p>
+        </div>
+        <div class="hero">
+            <h3>Pudge</h3>
+            <h4>Facets</h4>
+            <h5>Flayer's hook</h5>
+                <p>Nie zwiększa już prędkości pocisku Meat Hook.</p>
+            <h4>Umiejętności</h4>
+            <h5>Flesh heap</h5>
+                <p>Bonus Siły został zmniejszony z 1.4/1.6/1.8/2.0 do 1.1/1.4/1.7/2.0.</p>
+            <h5>Meat shield</h5>
+                <p>Skrócono czas trwania z 5/6/7/8 do 4/5/6/7 sekund.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 10: Spowolnienie Rot zmniejszone z +15% do +10%.</p>
+        </div>
+        <div class="hero">
+            <h3>Razor</h3>
+            <h4>Umiejętności</h4>
+            <h5>Storm surge</h5>
+                <p>Zwiększono obrażenia z 40/80/120/160 do 50/90/130/170 pkt.</p>
+        </div>
+        <div class="hero">
+            <h3>Sand king</h3>
+            <h4>Facets</h4>
+            <h5>Dust devil</h5>
+            <h5>Sand storm</h5>
+                <p>Prędkość Piaskowej Burzy teraz wzrasta, gdy Sand King znajduje się poza nią, aż do 125% jego szybkości ruchu.</p>
+            <h4>Umiejętności</h4>
+            <h5>Sand storm</h5>
+                <p>Obrażenia na sekunde zostały zwiększone z 25/45/65/85 do 25/50/75/100.</p>
+        </div>
+        <div class="hero">
+            <h3>Shadow Fiend</h3>
+            <h4>Facets</h4>
+            <h5>Shadowmire</h5>
+            <h5>Shadowraze</h5>
+                <p>Przeskalowano spowolnienie ruchu z 8% do 5/6/7/8%.</p>
+                <P>Przeskalowano spowolnienie ataku z 8% do 5/6/7/8%.</P>
+            <h4>Umiejętności</h4>
+            <h5>Necromastery</h5>
+                <p>Nie zwiększa już dusz przy zabijaniu innych typów jednostek (wardów, zębatek itp.).</p>
+            <h5>Shadowraze</h5>
+                <p>Bonus za każdy stack został zmniejszony z 50/60/70/80 do 35/50/65/80.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 25: Premia do szybkości rzucania dzięki umiejętności Feast of Souls zmniejszona z 40% do 30%.</p>
+        </div>
+        <div class="hero">
+            <h3>Silencer</h3>
+            <h4>Umiejętności</h4>
+            <h5>Arcane curse</h5>
+                <p>Przeskalowano koszt many ze 130/135/140/145 do 120/130/140/150 pkt.</p>
+            <h5>Global silence</h5>
+                <p>Trwanie Klątwy Arcane z Aghanim's Scepter jest teraz ustawione na aktualny czas trwania Global Silence, zamiast zawsze 6 sekund.</p>
+        </div>
+        <div class="hero">
+            <h3>Slark</h3>
+            <h4>Facets</h4>
+            <h5>Dark reef renegade</h5>
+            <h5>Barracuda</h5>
+                <p>Czas utrzymania się zwiększony z 0.5/1/1.5/2s do 1.5/2.0/2.5/3.0s.</p>
+                <p>Promień wyszukiwania od utrzymania się zmniejszony z 1000 do 900</p>
+        </div>
+        <div class="hero">
+            <h3>Snapfire</h3>
+            <h4>Umiejętności</h4>
+            <h5>Lil' shredder</h5>
+                <p>Obrażenia od ataku zwiększone z 25% do 30%.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 25: Obrażenia od ataku Lil' Shredder zmniejszone z +75% do +70%."</p>
+        </div>
+        <div class="hero">
+            <h3>Sniper</h3>
+            <h4>Facets</h4>
+            <h5>Scattershot</h5>
+            <h5>Shrapnel</h5>
+                <p>Zwiększono spowolnienie szybkości ruchu z 30/40/50/60% do 30/45/60/75%.</p>
+        </div>
+        <div class="hero">
+            <h3>Spectre</h3>
+            <h4>Umiejętności</h4>
+            <h5>Desolate</h5>
+                <p>Zwiększono premię do obrażeń z 20/35/50/65 do 25/40/55/70 pkt.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 15: Obrażenia od Desolate zwiększone z +12 do +15."</p>
+        </div>
+        <div class="hero">
+            <h3>Spirit Breaker</h3>
+            <h4>Umiejętności</h4>
+            <h5>Charge of darkness</h5>
+                <p>Przeskalowano koszt many ze 100 do 90/100/110/120 pkt.</p>
+            <h5>Nether strike</h5>
+                <p>Wydłużono czas oczekiwania z 70/50/30 do 75/55/35 sekund.</p>
+        </div>
+        <div class="hero">
+            <h3>Storm Spirit</h3>
+            <h4>Facets</h4>
+            <h5>Static slide</h5>
+            <h5>Static remnant</h5>
+                <p>Szybkość remnanta zmniejszona z 325 do 300</p>
+                <p>Może teraz być przełączana na alternatywne rzucanie, aby zawsze umieścić remnanta na pozycji Storm Spirita</p>
+            <h4>Umiejętności</h4>
+            <h5>Galvanized</h5>
+                <p>Awansowanie Ball Lightning teraz daje 3 ładunki zamiast 5.</p>
+            <h5>Static remnant</h5>
+                <p>Zasieg wizji zmniejszony z 500 do 100</p>
+        </div>
+        <div class="hero">
+            <h3>Sven</h3>
+            <h4>Facets</h4>
+            <h5>Heavy plate</h5>
+            <h5>Warcry</h5>
+                <p>Zwiększono siłę bariery fizycznej z 50/100/150/200 do 60/120/180/240 jednostek.</p>
+            <h5>Boski gniew</h5>
+                <p>Zmniejszono redukcję bazowych obrażeń z 25 do 20 pkt.</p>
+        </div>
+        <div class="hero">
+            <h3>Templar assassin</h3>
+            <h4>Umiejętności</h4>
+            <h5>Refraction</h5>
+                <p>Przeskalowano barierę na instancję z 20/30/40/50 do 30 pkt.</p>
+            <h5>Psionic trap</h5>
+                <p>Zmniejszono min. spowolnienie ruchu z 30% do 20%.</p>
+                <p>Zmniejszono maks. spowolnienie ruchu z 60% do 50%.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 10: Obrażenia od refraction zmniejszone z +25 do +20</p>
+                <p>Poziom 25: Instancje z refraction zmniejszono z +5 do +3</p>
+        </div>
+        <div class="hero">
+            <h3>Tidehunter</h3>
+            <h4>Facets</h4>
+            <h5>Krill eater</h5>
+                <p>Zwiększono bazową Siłę z 22 do 24 pkt.</p>
+            <h4>Umiejętności</h4>
+            <h5>Kraken shell</h5>
+                <p>Przeskalowano zablokowane obrażenia z 16/32/54/70 do 15/35/55/75 jednostek.</p>
+        </div>
+        <div class="hero">
+            <h3>Timbersaw</h3>
+            <h4>Facets</h4>
+            <h5>Twisted chakram</h5>
+                <p>Zasięg rzutu teraz odpowiada maksymalnemu zasięgowi, na jaki może dotrzeć chakram, zamiast być środkiem jego trasy lotu.</p>
+        </div>
+        <div class="hero">
+            <h3>Tinker</h3>
+            <h4>Facets</h4>
+            <h5>Translokator</h5>
+            <h5>Defense matrix</h5>
+                <p>Typ rozpraszania zmieniono z silnego na podstawowy.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 15: 250 AoE Laser został zastąpiony +40 Obrażenia Lasera</p>
+                <p>Poziom 25: +80 Obrażenia Lasera został zastąpiony 250 AoE Laser</p>
+        </div>
+        <div class="hero">
+            <h3>Tiny</h3>
+            <h4>Facets</h4>
+            <h5>Lądowanie awaryjne</h5>
+            <h5>Toss</h5>
+                <p>Zmniejszono spowolnienie szybkości ruchu z 20/25/30/35% do 15/20/25/30%.</p>
+                <p>Zmniejszono spowolnienie ataku z 25/30/35/40 do 10/20/30/40 jednostek.</p>
+        </div>
+        <div class="hero">
+            <h3>Treant Protector</h3>
+            <h4>Umiejętności</h4>
+            <h5>Nature's guise</h5>
+                <p>Aghanim's Shard nie zwiększa już premii do szybkości ruchu.</p>
+        </div>
+        <div class="hero">
+            <h3>Troll Warlord</h3>
+            <h4>Umiejętności</h4>
+            <h5>Fervor</h5>
+                <p>Zmniejszono maksymalną liczbę instancji z 12 do 10.</p>
+        </div>
+        <div class="hero">
+            <h3>Underlord</h3>
+            <h4>Facets</h4>
+            <h5>Horda z otchłani</h5>
+                <p>Zmniejszono obrażenia wojowników z 20/35/50 do 18/32/46 pkt.</p>
+                <p>Zmniejszono obrażenia łuczników z 30/45/60 do 25/40/55 pkt.</p>
+            <h4>Umiejętności</h4>
+            <h5>Fiend's gate</h5>
+                <p>Wydłużono czas oczekiwania ze 110/100/90 do 110/105/100 sekund.</p>
+                <p>Skrócono czas trwania premii z 5/6/7 do 5 sekund.</p>
+        </div>
+        <div class="hero">
+            <h3>Ursa</h3>
+            <h4>Talenty</h4>
+                <p>Poziom 10: Czas resetowania Fury swipes zmniejszony z +20s do +15s</p>
+        </div>
+        <div class="hero">
+            <h3>Vengeful Spirit</h3>
+            <h4>Umiejętności</h4>
+            <h5>Magic missile</h5>
+                <p>Skrócono czas trwania ogłuszenia z 1,4/1,5/1,6/1,7 do 1,1/1,3/1,5/1,7 sekundy.</p>
+                <p>Zmniejszono obrażenia z 90/180/270/360 do 85/170/255/340 pkt.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 15: Redukcja pancerza z wave of terror zmniejszona z 5 do 4</p>
+        </div>
+        <div class="hero">
+            <h3>Visage</h3>
+            <h4>Facets</h4>
+            <h5>Mogiła</h5>
+            <h5>Grave chill</h5>
+                <p>Zmniejszono obszar działania z 300 do 250 jednostek.</p>
+            <h5>Wierni stronnicy</h5>
+            <h5>Summon familiars</h5>
+                <p>Użycie celowanego ogłuszenia obszaru dla Familiarów nie może już być anulowane przez komendy ataku prawym przyciskiem myszy.</p>
+                <p>Grave Chill teraz także wydaje rozkaz ataku na ten cel, jeśli znajduje się w zasięgu ataku bohatera.</p>
+        </div>
+        <div class="hero">
+            <h3>Warlock</h3>
+            <h4>Facets</h4>
+            <h5>Czempion gorroth</h5>
+            <h5>Chaotic offering</h5>
+                <p>Obrażenia od regeneracji HP/Many zmniejszone z 100% do 90%.</p>
+            <h4>Umiejętności</h4>
+            <h5>Chaotic offering</h5>
+                <p>Zdrowie golema zostało przeskalowane z 1400/2300/3200 do 1500/2250/3000.</p>
+        </div>
+        <div class="hero">
+            <h3>Weaver</h3>
+            <h4>Facets</h4>
+            <h5>Skitterstep</h5>
+            <h5>Shukuchi</h5>
+                <p>Skrócono czas trwania spowolnienia z 0,3 do 0,2 sekundy.</p>
+            <h4>Umiejętności</h4>
+            <h5>Geminate attack</h5>
+                <p>Obrażenia od geminate attack zostały zmniejszone z 5/25/40/55/70 do 0/20/35/50/65.</p>
+            <h5>Shukuchi</h5>
+                <p>Zwiększono koszt many z 60 do 65 pkt.</p>
+            <h4>Talenty</h4>
+                <p>Poziom 10: zmniejszono premię do Siły z 8 do 7 pkt.</p>
+                <p>Poziom 20: geminate attack damage zostało zmniejszone z +90 do +80.</p>
+        </div>
+        <div class="hero">
+            <h3>Witch Doctor</h3>
+            <h4>Facets</h4>
+            <h5>Voodoo festeration</h5>
+                <p>Zmniejszono promień z 700/750/800/850 do 600/650/700/750 jednostek.</p>
+                <p>Zmniejszono samoleczenie z 50% do 25%.</p>
+        </div>
+        <div class="hero">
+            <h3>Wraith King</h3>
+            <h4>Umiejętności</h4>
+            <h5>Reincarnation</h5>
+                <p>Zwiększono koszt many ze 180 do 200 pkt.</p>
+        </div>
+    </body>
+</html>
+        </body>
+    </html>
+    </main>
+    <footer>
+        <p>2024 STRONA PROJEKT</p>
+    </footer>
+</body>
+</html>

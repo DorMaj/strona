@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum E-Sportu</title>
+    <link rel="stylesheet" href="substyles.css">
+    <link rel="stylesheet" href="burger.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="icon" type="image" href="images/logo.png">
+
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 20px;
+
+      }
+      h1, h2 {
+          color: #8CE13F;
+          text-align: center;
+      }
+      .container {
+          max-width: 1200px;
+          margin: auto;
+          padding: 20px;
+          font-size: 22px;
+          text-align: justify;
+      }
+      ul {
+          list-style-type: disc;
+          margin-left: 20px;
+      }
+      .lanes li {
+            text-align: justify;
+            list-style: none;
+            padding-left: 40px;
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+        .lanes .top {
+          color: rgb(238, 183, 80);
+          background-image: url('images/top.jpg');
+          height: 80%;
+        }
+        .lanes .mid {
+          color: rgb(56, 56, 219);
+          background-image: url('images/mid.jpg');
+          height: 80%;
+        }
+        .lanes .bot {
+          color: rgb(247, 106, 106);
+          background-image: url('images/adc.jpg');
+          height: 80%;
+
+        }
+        .lanes .jg {
+          color: #67f567;
+          background-image: url('images/jg.jpg');
+          height: 80%;
+
+        }
+        .roles{
+          text-align: justify;
+        }
+        .roles .as{
+          color: rgb(131, 16, 16);
+        }
+        .roles .fh{
+          color: rgb(209, 119, 34);
+        }
+        .roles .mg{
+          color: rgb(36, 137, 196);
+        }
+        .roles .ms{
+          color: #8cca52;
+        }
+        .roles .supp{
+          color: rgb(231, 162, 183);
+        }
+        .image{
+          margin-left: 20%;
+          margin-right: 20%; 
+          object-fit: cover;
+          height: 50%; 
+          width: 60%;
+          max-width: 1000px;
+          max-height: 1000px;
+          
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+        .subsection {
+            margin-bottom: 10px;
+            text-align: justify; 
+            margin-left: 20px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        .category {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        h3{
+          margin-left: 20px;
+        }
+
+  </style>
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="Backgroundanim.js"></script>
+        <script src="burger.js"></script>
+    <header>
+      <div class="space"></div>
+      <div id="menu-wrapper">
+        <div id="hamburger-menu"></div>
+      </div>
+      <div id="menu-container">
+        <div class="close-menu">Menu</div>
+        <div class="main"><a href="index.html">Strona główna</a></div>
+        <ul class="menu-list">
+
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">League of Legends</span>
+            </div>
+            <div class="accordion-content"><a href="lol.html">O grze</a></div>
+            <div class="accordion-content"><a href="lol_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="lol_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Valorant</span>
+            </div>
+            <div class="accordion-content"><a href="valorant.html">O grze</a></div>
+            <div class="accordion-content"><a href="valorant_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="valorant_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Dota 2</span>
+            </div>
+            <div class="accordion-content"><a href="dota2.html">O grze</a></div>
+            <div class="accordion-content"><a href="dota2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="dota2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Conter Strike 2</span>
+            </div>
+            <div class="accordion-content"><a href="cs2.html">O grze</a></div>
+            <div class="accordion-content"><a href="cs2_akt.html">Aktualności</a></div>
+            <div class="accordion-content"><a href="cs2_esp.html">E-sport</a></div>
+          </li>
+          <li>
+            <div class="accordion-toggle">
+              <span class="menu-link">Informacje</span>
+            </div>
+            <div class="accordion-content"><a href="kontakt.html">Skontaktuj sie z nami</a></div>
+            <div class="accordion-content"><a href="info.html">Informacje o stronie</a></div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+    <div class="logo">
+            <h1>LEAGUE OF LEGENDS</h1>
+        </div>    
+        <div class="articles">
+            <div class="info">
+              <div class="container">
+                <h1>Aktualności</h1>
+                    <img class="image" src="images/patchnotes.jpg" alt="Banner">
+                        
+                    <h2>Patch 14.13 [25.06.2024]</h2>
+                    <h2>NEXT Patch 14.14 (Nowy bohater Aurora oraz nowy tryb gry)!! [17.07.2024]</h2>
+                    <h1>League of Legends Patch Notes</h1>
+    
+                    <h1>Patch Notes</h1>
+    <div class="section">
+        <h2>Bohaterowie</h2>
+        <div class="subsection">
+            <h3>Brand</h3>
+            <ul>
+                <li class="category">Umiejętność bierna — Płomień</li>
+                <li>Przywrócenie many: 30-50 pkt. (zależnie od poziomu) ⇒ 20-40 pkt. (zależnie od poziomu)</li>
+                <li class="category">E — Pożoga</li>
+                <li>Obrażenia magiczne: 60/90/120/150/180 pkt. (+60% mocy umiejętności) ⇒ 60/85/110/135/160 pkt. (+60% mocy umiejętności)</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Gangplank</h3>
+            <ul>
+                <li class="category">E — Beczka Prochu</li>
+                <li>Spowolnienie: 30/37,5/45/52,5/60% (+0-25% w zależności od szansy na trafienie krytyczne) ⇒ 40/50/60/70/80%</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Gragas</h3>
+            <ul>
+                <li class="category">Umiejętność bierna — Happy Hour</li>
+                <li>Leczenie zależne od maksymalnego zdrowia: 6,5% ⇒ 5,5%</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Graves</h3>
+            <ul>
+                <li class="category">E — Rozpęd</li>
+                <li>Dodatkowy pancerz za każdy ładunek: 2/5/8/11/14 pkt. ⇒ 4/7/10/13/16 pkt.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Kalista</h3>
+            <ul>
+                <li class="category">Podstawowe statystyki</li>
+                <li>Obrażenia od ataku: 61 pkt. ⇒ 59 pkt.</li>
+                <li class="category">W — Strażnik</li>
+                <li>Usunięto minimalne obrażenia przeciwko jednostkom niebędącym bohaterami: 75/100/125/150/175 pkt.</li>
+                <li>Usunięto próg wykończenia jednostek niebędących bohaterami: 125/150/175/200/250 pkt.</li>
+                <li>Próg obrażeń przeciwko jednostkom niebędącym bohaterami: 250/300/350/400/450 pkt. ⇒ 100/125/150/175/200 pkt.</li>
+                <li class="category">R — Zew Przeznaczenia</li>
+                <li>Czas odnowienia: 150/120/90 sek. ⇒ 160/140/120 sek.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Karthus</h3>
+            <ul>
+                <li class="category">Q — Zrównanie z Ziemią</li>
+                <li>Obrażenia magiczne: 43/62/81/100/119 pkt. (+35% mocy umiejętności) ⇒ 40/59/78/97/116 pkt. (+35% mocy umiejętności)</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Kennen</h3>
+            <ul>
+                <li class="category">Podstawowe statystyki</li>
+                <li>Zdrowie: 611 pkt. ⇒ 580 pkt.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Lee Sin</h3>
+            <ul>
+                <li class="category">Podstawowe statystyki</li>
+                <li>Przyrost zdrowia: 105 pkt. ⇒ 108 pkt.</li>
+                <li class="category">W — Osłona / Żelazna Wola</li>
+                <li>Tarcza: 50/100/150/200/250 pkt. (+80% mocy umiejętności) ⇒ 70/115/160/205/250 pkt. (+80% mocy umiejętności)</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Lissandra</h3>
+            <ul>
+                <li class="category">Q — Odłamek Lodu</li>
+                <li>Obrażenia magiczne: 80/110/140/170/200 pkt. (+80% mocy umiejętności) ⇒ 80/110/140/170/200 pkt. (+85% mocy umiejętności)</li>
+                <li class="category">W — Pierścień Mrozu</li>
+                <li>Czas odnowienia: 12/11/10/9/8 sek. ⇒ 10/9,5/9/8,5/8 sek.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Miss Fortune</h3>
+            <ul>
+                <li class="category">Podstawowe statystyki</li>
+                <li>Podstawowe obrażenia od ataku: 52 pkt. ⇒ 55 pkt.</li>
+                <li class="category">W — Szybki Krok</li>
+                <li>Blokada obrażeń: 5 sek. ⇒ 4 sek.</li>
+                <li>Opóźnienie ulepszonej prędkości ruchu: 5 sek. ⇒ 3 sek.</li>
+                <li>Maksymalna premia do prędkości ruchu: 55/65/75/85/95 jedn. ⇒ 60/70/80/90/100 jedn.</li>
+                <li>Początkowa prędkość ruchu: 25 jedn. ⇒ 30/35/40/45/50 jedn.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Orianna</h3>
+            <ul>
+                <li class="category">Podstawowe statystyki</li>
+                <li>Obrażenia od ataku: 40 pkt. ⇒ 44 pkt.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Pantheon</h3>
+            <ul>
+                <li class="category">W — Skok z Tarczą</li>
+                <li>Minimalne obrażenia przeciwko stworom i potworom: 50 pkt. ⇒ 60 pkt.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Skarner</h3>
+            <ul>
+                <li class="category">Q — Roztrzaskana Ziemia / Tąpnięcie</li>
+                <li>Koszt many: 30 pkt. ⇒ 50 pkt.</li>
+                <li>Obrażenia od maksymalnego zdrowia: 15% ⇒ 10%</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Taliyah</h3>
+            <ul>
+                <li class="category">Q — Utkana Salwa</li>
+                <li>Dodatkowe obrażenia przeciwko potworom: 25 pkt. (+5% mocy umiejętności) ⇒ 10 pkt.</li>
+            </ul>
+        </div>
+        <div class="subsection">
+            <h3>Varus</h3>
+            <ul>
+                <li class="category">Podstawowe statystyki</li>
+                <li>Obrażenia od ataku: 60 pkt. ⇒ 57 pkt.</li>          
+              
+              <li>Przyrost prrostu obrażeń od ataku: 3,11 pkt. ⇒ 3 pkt.</li>
+            </ul>
+          </div>
+            <div class="subsection">
+            <h3>Viego</h3>
+            <ul>
+                <li class="category">Q — Ostrze Zrujnowanego Króla</li>
+                <li>Krwawe cięcie (współczynnik dodatkowych obrażeń od ataku): 60% ⇒ 55%</li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <h3>Xayah</h3>
+            <ul>
+                <li class="category">E — Wezwanie Ostrzy</li>
+                <li>Czas odnowienia: 13/12/11/10/9 sek. ⇒ 12/11/10/9/8 sek.</li>
+                <li>Obrażenia podstawowe: 50/60/70/80/90 pkt. (+60% dodatkowych obrażeń od ataku) ⇒ 55/65/75/85/95 pkt. (+60% dodatkowych obrażeń od ataku)</li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <h3>Zac</h3>
+            <ul>
+                <li class="category">Umiejętność bierna — Podział Komórkowy</li>
+                <li>Leczenie z Kapek: 5/6/7/8% maksymalnego zdrowia (w zależności od poziomu R) ⇒ 4-8% (w zależności od poziomu)</li>
+            </ul>
+          </div>
+          </div>
+          <div class="section">
+
+
+            <h2>Przedmioty</h2>
+          <div class="subsection">
+            <h3>Okazja</h3>
+            <ul>
+                <li class="category">Destrukcja przygotowania</li>
+                <li>5-10,5 pkt. (zależnie od poziomu) ⇒ 5-10,5 pkt. (zależnie od poziomu, w zwarciu) / 3-6,3 pkt. (zależnie od poziomu, na dystans)</li>
+                <li class="category">Premia do prędkości ruchu Wydobycia zanikająca przez 1,5 sek.</li>
+                <li>150 jedn. ⇒ 200 jedn.</li>
+            </ul>
+          </div>
+          </div>
+          <div class="section">
+            <h2>Runy</h2>
+          <div class="subsection">
+            <h3>Mroczne Żniwa</h3>
+            <ul>
+                <li class="category">Obrażenia: 20-80 pkt. (+5 pkt. za każdą duszę) ⇒ 20 pkt. (+9 pkt. za każdą duszę, współczynniki premii bez zmian)</li>
+                <li>Czas odnowienia: 45 sek. ⇒ 40 sek.</li>
+            </ul>
+          </div>
+          <div class="subsection">
+            <h3>Elektryzacja</h3>
+            <ul>
+                <li>Obrażenia: 30-220 pkt. ⇒ 50-190 pkt. (współczynniki premii bez zmian)</li>
+                <li>Czas odnowienia: 25-20 sek. (zależnie od poziomu) ⇒ 20 sek.</li>
+            </ul>
+          </div>
+          </div>
+          <div class="section">
+            <div class="subsection">
+            <h2>Aktualizacja PL za awans w grach rankingowych</h2>
+                <p>Przez długi czas po awansie do nowego kręgu rankingowego (np. ze Srebra 1 do Złota 4) gracze zaczynali z 1 PL, co jest frustrujące, w szczególności po wygranych na wysokich wartościach PL (90+). Wprowadzamy zmianę, dzięki której PL będą liczone jak w przypadku zwykłego zwycięstwa po awansie do nowego kręgu rankingowego. Zwiększy to intuicyjność podróży graczy poprzez rangi. Dzięki kontroli inflacji i optymalizacji PL od splitu 1. 2024 mamy pewność, że zmiana ta nie popsuje integralności rywalizacji. Jest oparta na zdrowszym ekosystemie PL.</p>
+                <p>Jeśli PL za normalne zwycięstwo zsumują się do 0 po awansie, dodany zostanie 1 PL. Tylko w tym konkretnym scenariuszu gracze zaczną od 1 PL.</p>
+          
+              </div>
+          </div>
+      </div>
+    </main>
+</body>
+<footer>
+  <p>2024 STRONA PROJEKT</p>
+</footer>
+</html>

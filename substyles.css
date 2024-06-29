@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(35, 37, 35);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(48, 49, 47, 0);
+    padding: 10px;
+}
+
+
+.banner img {
+    object-fit: cover;
+    height: 200px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+
+.info{
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 90%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.logo{
+ text-align: center;
+ color: #8CE13F;
+}
+
+header .logo h1{
+    color: #8CE13F;
+    font-size: 50px;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #111;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*ARTYKUŁY*/
+.articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.article {
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 23%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+}
+
+.article:hover {
+transform: translateY(-10px);
+transition-duration: 0.2s;
+background-color: rgba(48, 49, 47, 1);
+}
+
+.article img {
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #8CE13F;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+/*ARTYKUŁY*/

@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #menu-wrapper {
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(99, 228, 25);
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-right: 2%;
+    margin-top: 1%;
+    right: 0;
+    top: 0;
+    z-index: 6;
+    position: fixed;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(99, 228, 25);
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  #hamburger-menu::before,
+  #hamburger-menu::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(99, 228, 25);
+    position: absolute;
+    transition: all 0.3s;
+  }
+
+  #hamburger-menu::before {
+    top: -10px;
+  }
+
+  #hamburger-menu::after {
+    top: 10px;
+  }
+
+  #hamburger-menu.open {
+    background-color: transparent;
+  }
+
+  #hamburger-menu.open::before {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: #e44242;
+  }
+
+  #hamburger-menu.open::after {
+    transform: rotate(-45deg);
+    top: 0;
+    background-color: #e44242;
+  }
+
+  #menu-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    overflow-y: auto;
+    transition: left 0.2s;
+    z-index: 5;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  #menu-container .menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-list .accordion-toggle {
+    padding: 15px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid #555;
+  }
+
+  .menu-list .accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #666;
+  }
+
+  .menu-list .accordion-toggle.active-tab {
+    background-color: #555;
+  }
+
+  .menu-list .accordion-toggle .menu-link.active {
+    font-weight: bold;
+  }
+
+  body.overflow-hidden {
+    overflow: hidden;
+  }
+
+  .close-menu {
+    margin-top: 10%;
+    cursor: pointer;
+    padding: 11px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+
+  .main{
+    display: block;
+    padding: 15px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #666;
+
+  }
